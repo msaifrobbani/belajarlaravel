@@ -34,3 +34,6 @@ Folder Tests --> untuk membuat automatic testing, unit testing.
 Folder Vendor --> folder untuk composer. 
 
 Secara umum akan banyak bekerja di folder App dan resources juga database (untuk buat tabel-tabel). Yang intinya ada di folder app dan resources. 
+
+Fungsi App Key adalah untuk meberikan keamanan aplikasi laravel kita. Sebagai sekuriti, digunakan untuk enkripsi
+
