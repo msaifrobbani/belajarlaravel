@@ -38,6 +38,6 @@ Secara umum akan banyak bekerja di folder App dan resources juga database (untuk
 Fungsi App Key adalah untuk meberikan keamanan aplikasi laravel kita. Sebagai sekuriti, digunakan untuk enkripsi
 
 Log 1; 24/06/2020
->> Belajar pengaturan konfigurasi
+ -> Belajar pengaturan konfigurasi
     - cek folder config\majalah.php
     - cek routes\web.php 
