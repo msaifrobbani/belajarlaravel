@@ -17,3 +17,15 @@ Route::get('/', function () {
     // return view('welcome');
     return config('majalah.pagination.backend');
 });
+
+//implementasi paramater pada route
+Route::get('admin/{id}/article/{articleId}', function ($id, $articleId)
+{
+    return 'Admin Gaul ' . $id . ' Penulisan Artikel sebanyak : ' . $articleId;
+});
+
+//implementasi parameter jika optional
+Route::get('admin/{id?}', function ($id = null)
+{
+    return 'Admin Gaul ' . $id;
+});

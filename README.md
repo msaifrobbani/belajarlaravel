@@ -41,3 +41,6 @@ Log 1; 24/06/2020
  -> Belajar pengaturan konfigurasi
     - cek folder config\majalah.php
     - cek routes\web.php 
+
+Log 2; 25/06/2020
+ -> Routes merupakan entry point dari laravel
