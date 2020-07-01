@@ -38,9 +38,14 @@ Secara umum akan banyak bekerja di folder App dan resources juga database (untuk
 Fungsi App Key adalah untuk meberikan keamanan aplikasi laravel kita. Sebagai sekuriti, digunakan untuk enkripsi
 
 Log 1; 24/06/2020
- -> Belajar pengaturan konfigurasi
-    - cek folder config\majalah.php
-    - cek routes\web.php 
+    -> Belajar pengaturan konfigurasi
+        - cek folder config\majalah.php
+        - cek routes\web.php 
 
 Log 2; 25/06/2020
- -> Routes merupakan entry point dari laravel
+    -> Routes merupakan entry point dari laravel
+
+Log 3; 01/07/2020
+    -> Ketika membuat aplikasi perlu untuk mendefinisikan banyak route yang kita butuhkan
+    -> Route Group : memudahkan maintenance aplikasi yang sudah kita buat
+    -> membuat route group didalam route group bisa
