@@ -49,3 +49,6 @@ Log 3; 01/07/2020
     -> Ketika membuat aplikasi perlu untuk mendefinisikan banyak route yang kita butuhkan
     -> Route Group : memudahkan maintenance aplikasi yang sudah kita buat
     -> membuat route group didalam route group bisa
+
+Log 4; 01/07/2020
+    -> Route Alias Name untuk mempermudah penamaan route.

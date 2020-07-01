@@ -75,3 +75,12 @@ Route::prefix('menu')->group(function(){
         return 'sosmed';
     });
 });
+
+//Route Alias Name
+Route::get('/redirect', function(){
+    return redirect()->route('landing'); //Bentuk implementasi dari Route Alias Name
+});
+
+Route::get('landing-page/status-page', function(){
+    return 'Status landing page';
+})->name('landing'); //Route Alias Name
