@@ -84,3 +84,9 @@ Route::get('/redirect', function(){
 Route::get('landing-page/status-page', function(){
     return 'Status landing page';
 })->name('landing'); //Route Alias Name
+
+//Route Resources
+Route::resource('artikel', 'ArtikelController');
+
+//API Resources
+Route::apiResource('penulis', 'PenulisController');

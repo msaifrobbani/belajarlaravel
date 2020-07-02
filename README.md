@@ -52,3 +52,12 @@ Log 3; 01/07/2020
 
 Log 4; 01/07/2020
     -> Route Alias Name untuk mempermudah penamaan route.
+
+Log 5; 02/07/2020
+    -> Route Resources dan API Resources
+    -> dalam membuat CRUD minimal harus punya minimal 4-5 route tersebut
+    -> Route Resources untuk menghandle CRUD supaya penulisan ROute tersebut jadi lebih simple
+    -> Cara menggunakan Route Resources :
+    -> 1. ketik perintah ini Route::resource('artikel', 'ArtikelController');
+    -> 2. masukkan di terminal 'php artisan make:controller ArtikelController --resource'
+    -> 3. Maka akan terbentuk controller lengkap dengan perintah CRUD
