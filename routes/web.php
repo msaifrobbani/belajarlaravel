@@ -13,11 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-    //return config('majalah.pagination.backend');
-});
-
 //implementasi paramater pada route
 /*
 Route::get('admin/{id}/article/{articleId}', function ($id, $articleId)
@@ -86,7 +81,19 @@ Route::get('landing-page/status-page', function(){
 })->name('landing'); //Route Alias Name
 
 //Route Resources
-Route::resource('artikel', 'ArtikelController');
+//Route::resource('artikel', 'ArtikelController');
+Route::get('/artikel', 'ArtikelController@index')->name('artikel');
 
 //API Resources
 Route::apiResource('penulis', 'PenulisController');
+
+//Route View
+//Route::view('/home', 'welcome');
+
+//Route Redirect
+Route::redirect('/disini', '/kesana');
+
+Route::group(['prefix' => '/', 'as' => 'Home'], static function(){
+    Route::get('/', 'HomeController@index')->name('beranda');
+    Route::post('/', 'HomeController@store');
+});

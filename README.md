@@ -61,3 +61,16 @@ Log 5; 02/07/2020
     -> 1. ketik perintah ini Route::resource('artikel', 'ArtikelController');
     -> 2. masukkan di terminal 'php artisan make:controller ArtikelController --resource'
     -> 3. Maka akan terbentuk controller lengkap dengan perintah CRUD
+
+Log 6; 03/07/2020
+    -> Route View adalah untuk sebuah URL menampilkan file view yang mana
+
+Log 7; 03/07/2020
+    -> membuat controller dengan php artisan make:controller ContohController --resource
+    -> terus membuat route => Route::get('/artikel', 'ArtikelController@index')->name('artikel'); --> ArtikelController@index, controller@method-nya
+
+Log 8; 03/07/2020
+    -> ketika membuat controller dengan artisan ada 1 class yang selalu ikut, yaitu class illuminate
+
+Log 9; 03/07/2020
+    -> Controller untuk submit form 

@@ -11,9 +11,17 @@ class ArtikelController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        //
+        //echo $_GET['name'];
+        // dd($request->name);
+        //atau
+        //echo $request->name;
+        //atau
+        echo $request->get('name','Kosong'); //fungsi Kosong adalah jika kita tidak mengirim request ke dalam parameter 'name' tersebut
+
+        //atau
+        // echo request('name') --> request adalah helper dari laravel
     }
 
     /**
