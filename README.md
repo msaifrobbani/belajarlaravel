@@ -74,3 +74,14 @@ Log 8; 03/07/2020
 
 Log 9; 03/07/2020
     -> Controller untuk submit form 
+
+Log 10; 04/07/2020
+    ->menggunakan view
+
+Log 11; 04/07/2020
+    -> Kustomisasi Halaman Error 
+        1. buat folder di views -> errors (contoh) -> buat file 404.blade.php
+
+Log 12; 04/07/2020
+    -> perlindungan dari CSRF
+        input type="hidden" name="_token" value="{{ csrf_token() }}"
