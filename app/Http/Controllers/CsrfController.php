@@ -13,8 +13,12 @@ class CsrfController extends Controller
 
     public function store(Request $request)
     {
-        $name = $request->input('nama');
-        $address = $request->input('alamat');
+        $this->validate($request, [
+            'name'      => 'required',
+            'address'   => 'required'
+        ]);
+        $name = $request->input('name');
+        $address = $request->input('address');
         return "Namaku : ".$name. "</br> Alamatku : ".$address;
         //dd($request);
     }

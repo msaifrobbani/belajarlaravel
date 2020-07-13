@@ -85,3 +85,9 @@ Log 11; 04/07/2020
 Log 12; 04/07/2020
     -> perlindungan dari CSRF
         input type="hidden" name="_token" value="{{ csrf_token() }}"
+
+Log 13; 13/07/2020
+    -> mengenal validasi form : gimana caranya biar form ketika tidak diisi menampilkan warning/tidak bisa diklik tombolnya
+    -> yang digunakan adalah validate($request, [ // request adalah yang ditangkap oleh sistem
+        'email' => 'required'  // ini adalah form yg ingin divalidasi, form email dengan rules-nya seprti apa
+    ]);

@@ -9,8 +9,8 @@
 <body>
     <form action="{{ route('CSRFCSRFtodo.store') }}" method="post">
         @csrf 
-        <input type="text" name="nama" placeholder="nama kalian">
-        <input type="text" name="alamat" placeholder="alamat kalian">
+        <input type="text" name="name" placeholder="nama kalian">
+        <input type="text" name="address" placeholder="alamat kalian">
         <input type="submit" value="Save">
     </form>
 </body>
