@@ -7,9 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-<form action="{{ route('CSRFCSRFtodo.store') }}" method="post">
+    <form action="{{ route('CSRFCSRFtodo.store') }}" method="post">
         @csrf 
-        <input type="text" name="todo">
+        <input type="text" name="nama" placeholder="nama kalian">
+        <input type="text" name="alamat" placeholder="alamat kalian">
         <input type="submit" value="Save">
     </form>
 </body>

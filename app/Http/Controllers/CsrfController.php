@@ -8,11 +8,14 @@ class CsrfController extends Controller
 {
     public function index()
     {
-        return view('todo');
+        return view('input');
     }
 
     public function store(Request $request)
     {
-       dd($request->todo);
+        $name = $request->input('nama');
+        $address = $request->input('alamat');
+        return "Namaku : ".$name. "</br> Alamatku : ".$address;
+        //dd($request);
     }
 }

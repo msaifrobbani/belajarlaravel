@@ -100,5 +100,5 @@ Route::group(['prefix' => '/home', 'as' => 'Home'], static function(){
 
 Route::group(['prefix' => '/', 'as' => 'CSRF'], static function(){
     Route::get('/', 'CsrfController@index')->name('csrf');
-    Route::post('/todo', 'CsrfController@store')->name('CSRFtodo.store');
+    Route::post('/input', 'CsrfController@store')->name('CSRFtodo.store');
 });
