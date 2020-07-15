@@ -91,3 +91,14 @@ Log 13; 13/07/2020
     -> yang digunakan adalah validate($request, [ // request adalah yang ditangkap oleh sistem
         'email' => 'required'  // ini adalah form yg ingin divalidasi, form email dengan rules-nya seprti apa
     ]);
+
+Log 14; 15/05/2020
+    -> kustomisasi Pesan Error pada Validasi
+    -> yang digunakan adalah validate($request, [ // request adalah yang ditangkap oleh sistem
+        'email' => 'required'  // ini adalah form yg ingin divalidasi, form email dengan rules-nya seprti apa
+    ], [
+        'email.required' => 'Email harus diisi', //kustomisasi pesan error
+        'email.email'   => 'Isikan field sesuai dengan format email (gunakan @)', //kustomisasi pesan error
+        'address.required' => 'Isi alamat kamu'
+    ]);
+    -> selain kustomisasi pesan error pada validasi dengan menggunakan pada controller tadi, bisa juga menggunakan validation.php di folder lang (di dalam folder resources)

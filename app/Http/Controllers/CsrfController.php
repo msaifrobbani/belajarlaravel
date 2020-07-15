@@ -14,12 +14,14 @@ class CsrfController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'name'      => 'required',
+            'email'      => 'required|email',
             'address'   => 'required'
+        ],[
+            'email.required' => ':attribute harus diisi',
+            'email.email'   => 'Isikan field sesuai dengan format email (gunakan @)'
         ]);
-        $name = $request->input('name');
+        $email = $request->input('email');
         $address = $request->input('address');
-        return "Namaku : ".$name. "</br> Alamatku : ".$address;
-        //dd($request);
+        return "Emailku : ".$email. "</br> Alamatku : ".$address;
     }
 }
