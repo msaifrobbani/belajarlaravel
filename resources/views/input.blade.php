@@ -12,11 +12,25 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="{{ route('CSRFCSRFtodo.store') }}" method="post">
-        @csrf 
-            <input type="email" name="email" placeholder="email kalian">
-            <input type="text" name="address" placeholder="alamat kalian">
-        <input type="submit" value="Save">
-    </form>
+    <div class="container">
+        <form action="{{ route('CSRFCSRFtodo.store') }}" method="post">
+            @csrf
+            <div class="form-group">
+                <label for="">Email Address</label>
+                <input type="email" name="email" class="form-control {{ $errors->has('email') ? 'is-invalid' : 'is-valid'}}" aria-describedby="emailHelp" placeholder="example.name@mail.com" value="{{ old('email') }}">
+                @if ($errors->has('email'))
+                    <div class="invalid-feedback">{{ $errors->first('email') }}</div>
+                @endif
+            </div>
+            <div class="form-group">
+                <label for="">Address</label>
+                <textarea name="address" class="form-control {{ $errors->has('address') ? 'is-invalid' : 'is-valid'}}" rows="3" placeholder="Alamat Rumah" value="{{ old('address') }}"></textarea>
+                @if ($errors->has('address'))
+                    <div class="invalid-feedback">{{ $errors->first('address') }}</div>
+                @endif
+            </div>
+            <button type="submit" class="btn btn-primary">Simpan</button>
+        </form>
+    </div>
 </body>
 </html>

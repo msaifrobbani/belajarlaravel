@@ -18,7 +18,8 @@ class CsrfController extends Controller
             'address'   => 'required'
         ],[
             'email.required' => ':attribute harus diisi',
-            'email.email'   => 'Isikan field sesuai dengan format email (gunakan @)'
+            'email.email'   => 'Isikan field sesuai dengan format email (gunakan @)',
+            'address.required' => ':attribute belum diisi'
         ]);
         $email = $request->input('email');
         $address = $request->input('address');

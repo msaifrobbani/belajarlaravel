@@ -92,7 +92,7 @@ Log 13; 13/07/2020
         'email' => 'required'  // ini adalah form yg ingin divalidasi, form email dengan rules-nya seprti apa
     ]);
 
-Log 14; 15/05/2020
+Log 14; 15/07/2020
     -> kustomisasi Pesan Error pada Validasi
     -> yang digunakan adalah validate($request, [ // request adalah yang ditangkap oleh sistem
         'email' => 'required'  // ini adalah form yg ingin divalidasi, form email dengan rules-nya seprti apa
@@ -102,3 +102,10 @@ Log 14; 15/05/2020
         'address.required' => 'Isi alamat kamu'
     ]);
     -> selain kustomisasi pesan error pada validasi dengan menggunakan pada controller tadi, bisa juga menggunakan validation.php di folder lang (di dalam folder resources)
+
+Log 15; 16/07/2020
+    -> validasi pesan error dengan gaya bootstrap 
+
+Log 17; 16/07/2020
+    -> Mengambil nilai request sebelumnya (Old Request)
+    -> jdi ketika kita mengisi form, akan lebih mudah jika terdapat kesalahan kita tidak mengisi ulang tapi nilai requestnya yang sebelumnya masih ditampilkan.
