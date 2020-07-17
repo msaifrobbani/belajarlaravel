@@ -22,14 +22,7 @@
                     <div class="invalid-feedback">{{ $errors->first('email') }}</div>
                 @endif
             </div>
-            <div class="form-group">
-                <label for="">Address</label>
-                <textarea name="address" class="form-control {{ $errors->has('address') ? 'is-invalid' : 'is-valid'}}" rows="3" placeholder="Alamat Rumah" value="{{ old('address') }}"></textarea>
-                @if ($errors->has('address'))
-                    <div class="invalid-feedback">{{ $errors->first('address') }}</div>
-                @endif
-            </div>
-            <button type="submit" class="btn btn-primary">Simpan</button>
+            <button type="submit" class="btn btn-danger">Daftar</button>
         </form>
     </div>
 </body>

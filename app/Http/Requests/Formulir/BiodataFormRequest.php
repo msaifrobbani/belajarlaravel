@@ -24,8 +24,7 @@ class BiodataFormRequest extends FormRequest
     public function rules()
     {
         return [
-            'email'      => 'required|email',
-            'address'   => 'required'
+            'email'      => 'required|email'
         ];
     }
 }

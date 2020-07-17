@@ -16,6 +16,6 @@ class CsrfController extends Controller
     {
         $email = $request->input('email');
         $address = $request->input('address');
-        return "Emailku : ".$email. "</br> Alamatku : ".$address;
+        return "Emailku : ".$email;
     }
 }
