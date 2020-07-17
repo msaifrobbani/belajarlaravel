@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\Formulir\BiodataFormRequest;
 use Illuminate\Http\Request;
 
 class CsrfController extends Controller
@@ -11,16 +12,8 @@ class CsrfController extends Controller
         return view('input');
     }
 
-    public function store(Request $request)
+    public function store(BiodataFormRequest $request)
     {
-        $this->validate($request, [
-            'email'      => 'required|email',
-            'address'   => 'required'
-        ],[
-            'email.required' => ':attribute harus diisi',
-            'email.email'   => 'Isikan field sesuai dengan format email (gunakan @)',
-            'address.required' => ':attribute belum diisi'
-        ]);
         $email = $request->input('email');
         $address = $request->input('address');
         return "Emailku : ".$email. "</br> Alamatku : ".$address;

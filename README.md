@@ -109,3 +109,18 @@ Log 15; 16/07/2020
 Log 17; 16/07/2020
     -> Mengambil nilai request sebelumnya (Old Request)
     -> jdi ketika kita mengisi form, akan lebih mudah jika terdapat kesalahan kita tidak mengisi ulang tapi nilai requestnya yang sebelumnya masih ditampilkan.
+    -> cara membuat class form request 'php artisan make:request NamaClassRequest'
+    -> filenya ada di App -> HTTP -> Folder Request
+
+Log 18; 17/07/2020
+    -> Response dengan Redirect
+    -> ada beberapa cara melakukan redirect :
+     1. return redirect()->route('routeAlias');
+     2. return redirect()->to('routeAlias');
+     3. return redirect()->back(); atau return back();
+
+Log 19; 17/07/2020
+    -> Response dengan JSON
+    -> caranya adalah 
+      1. return response()->json($data);
+    -> untuk response JSON digunakan untuk API
