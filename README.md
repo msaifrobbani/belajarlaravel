@@ -124,3 +124,15 @@ Log 19; 17/07/2020
     -> caranya adalah 
       1. return response()->json($data);
     -> untuk response JSON digunakan untuk API
+
+Log 20; 21/07/2020
+    -> Dasar - dasar mengirim email
+    cara membuatnya php artisan make:mail UserVerificationMail
+
+Log 21; 21/07/2020
+    -> Kirim email dengan Format Markdown
+    hp artisan make:mail UserVerificationMail --markdown='emails.activation'
+
+Log 22; 21/07/2020
+    -> render view di Email
+    return New UserActivationMail(); --> untuk melihat render view di email secara langsung
