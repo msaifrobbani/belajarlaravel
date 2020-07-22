@@ -145,3 +145,11 @@ Log 23; 22/07/2020
     php artisan make:migration add_phone_to_table_users --table=users
     ->cara menambahkan field baru dengan setelah kolom yang kita inginkan
     $table->string('field_baru',15)->after('field_lama);
+    -> di dalam function down() diisi --> $table->dropColumn('field_baru');
+
+Log 24; 22/07/2020
+    -> memodifikasi kolom dalam table database
+    -> untuk memodifikasi suatu kolom, usahakan untuk membuat file migration lagi.
+    php artisan make:migration modifying_name_on_users --table=users
+    -> stlah terbentuk file baru,ketikkan kolom yang mau kita modif. method yang digunakan adalah change();
+    $table->string('name',100)->change(); sebelumnya kolom name punya 50 untuk varchar.
