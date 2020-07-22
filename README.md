@@ -136,3 +136,12 @@ Log 21; 21/07/2020
 Log 22; 21/07/2020
     -> render view di Email
     return New UserActivationMail(); --> untuk melihat render view di email secara langsung
+
+Log 23; 22/07/2020
+    -> Konsep migration adalah untuk memudahkan kolaborasi ketika membangun sebuah sistem database bersama 
+    -> php artisan make:migration create_users_table --> membuat table terlebih dahulu
+    -> php artisan migrate --> untuk memigrasi table yang kita buat masuk ke dalam database
+    -> untuk menambahkan field baru 
+    php artisan make:migration add_phone_to_table_users --table=users
+    ->cara menambahkan field baru dengan setelah kolom yang kita inginkan
+    $table->string('field_baru',15)->after('field_lama);

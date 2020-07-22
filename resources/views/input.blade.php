@@ -22,7 +22,7 @@
                     <div class="invalid-feedback">{{ $errors->first('email') }}</div>
                 @endif
             </div>
-            <button type="submit" class="btn btn-danger">Daftar</button>
+            <button type="submit" class="btn btn-danger">Aktivasi</button>
         </form>
     </div>
 </body>

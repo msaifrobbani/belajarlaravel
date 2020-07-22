@@ -11,15 +11,15 @@ class CsrfController extends Controller
 {
     public function index()
     {
-        //return view('input');
-        Mail::to('saif.robbani04@belajarlaravel.test')->send(new UserVerificationMail());
-
-        return 'email terkirim';
+        return view('input');
     }
 
     public function store(BiodataFormRequest $request)
     {
         $email = $request->input('email');
-        return "Emailku : ".$email;
+        
+        Mail::to($email)->send(new UserVerificationMail());
+
+        return "Email Terkirim";
     }
 }
